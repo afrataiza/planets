@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import StyledTitle from '../styles/title.style';
 
 class Title extends Component {
   render() {
     const { headline } = this.props;
     return (
-      <h2>
-        {headline}
-      </h2>
+      <StyledTitle>
+        <h2>
+          {headline}
+        </h2>
+      </StyledTitle>
     );
   }
 }
